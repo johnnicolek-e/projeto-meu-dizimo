@@ -1,0 +1,194 @@
+/* Importando apenas a fonte Google - Bootstrap será importado no App.jsx */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Estilos gerais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Cabeçalho */
+.App-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.App-header h1 {
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+/* Mensagens */
+.message {
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Botões */
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Layout principal */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+  
+  .doacao-form, .historico {
+    flex: 1;
+  }
+}
+
+/* Formulário de doação */
+.doacao-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.doacao-form h2 {
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #0d6efd;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Histórico de doações */
+.historico {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.historico h2 {
+  color: #0d6efd;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.historico ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.historico li {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: #f8f9fa;
+}
+
+.historico li:last-child {
+  margin-bottom: 0;
+}
+
+.historico p {
+  margin-bottom: 0.5rem;
+}
+
+.historico a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.historico a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 576px) {
+  .App {
+    padding: 1rem 0.5rem;
+  }
+  
+  .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .doacao-form, .historico {
+    padding: 1.5rem;
+  }
+  
+  .doacao-form h2, .historico h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Estilo para o endereço da carteira conectada */
+.App-header p {
+  background-color: #e9ecef;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
