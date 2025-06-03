@@ -144,7 +144,7 @@ function App() {
       <section className="historico">
         <h2>Histórico de Doações</h2>
         {historico.length === 0 ? (
-          <p>Nenhum evento...</p>
+          <p>Nenhum evento registrado...</p>
         ) : (
           <ul>
             {historico.map((item, index) => (
