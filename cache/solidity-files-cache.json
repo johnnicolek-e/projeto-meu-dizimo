@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\meu-dizimo\\contracts\\meudizimo.sol": {
-      "lastModificationDate": 1748474776767,
+      "lastModificationDate": 1748525715228,
       "contentHash": "06bde9f52d63f911e6b57e7717c870aa",
       "sourceName": "contracts/meudizimo.sol",
       "solcConfig": {
-        "version": "0.8.20",
+        "version": "0.8.24",
         "settings": {
           "evmVersion": "paris",
           "optimizer": {
